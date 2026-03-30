@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getInvoceById } from "../data";
 
-export const InvoceDetails = () => {
+const InvoceDetails = () => {
   const [invoice, setInvoice] = useState(null);
   const { invocesId } = useParams();
 // console.log(useParams())
@@ -36,3 +36,5 @@ export const InvoceDetails = () => {
     </div>
   );
 };
+
+export default InvoceDetails;

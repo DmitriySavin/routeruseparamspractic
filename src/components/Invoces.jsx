@@ -21,7 +21,7 @@ const NavItem = styled(NavLink)`
   }
 `;
 
-export const Invoces = () => {
+ const Invoces = () => {
   const [invoces, setInvoces] = useState([]);
 
   useEffect(() => {
@@ -47,3 +47,6 @@ export const Invoces = () => {
     </Box>
   );
 };
+
+
+export default Invoces
